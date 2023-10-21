@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit&family=Ubuntu&display=swap');
+
+/* Body */
+:root {
+    --break: rgb(100, 50, 10);
+    --long-break: rgb(50, 25, 0);
+    --active: rgb(60, 60, 60);
+    --inactive: rgb(31, 31, 31);
+}
+
+body {
+    background-color: var(--inactive);
+    transition: 0.5s;
+    margin: 0px;
+}
+
+body.break {
+    background-color: var(--break);
+}
+
+body.longbreak {
+    background-color: var(--long-break);
+}
+
+body.timer {
+    background-color: var(--active);
+}
+
+/* Headers & Paragraphs */
+p {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Kanit", sans-serif;
+    color: white;
+}
+
+/* Timers */
+.timer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/IMG_20230730_175621.jpg);
+    background-position: center;
+    background-size: cover;
+    text-shadow: 0px 0px 14px black;
+    user-select: none;
+}
+
+.timewrapper {
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    color: white;
+    font-size: 100px;
+    padding: 25px;
+    background: rgba(31, 31, 31, 0.8);
+    outline: 10px solid rgba(31, 31, 31, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 300px;
+    filter: drop-shadow(0px 0px 6px black);
+}
+
+.timeroperations {
+    margin: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.timeroperations > span {
+    background-color: rgba(31, 31, 31, 0.8);
+    filter: drop-shadow(0px 0px 6px black);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.timeroperations > span.active {
+    background-color: rgba(200, 200, 200, 0.8);
+    color: black;
+}
+
+.timebutton {
+    margin: 15px;
+    color: white;
+    font-family: 'Abril Fatface', serif;
+    font-size: 40px;
+    background-color: rgba(31, 31, 31, 0.8);
+    filter: drop-shadow(0px 0px 6px black);
+    border-bottom: 3px solid white;
+    border-bottom-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    padding-top: 5px;
+    width: 100px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.timebutton:hover {
+    cursor: pointer;
+}

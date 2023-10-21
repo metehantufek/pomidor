@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focusin' Time</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="timer">
+        <div class="timeroperations">
+            <span id="P">Pomodoro</span>
+            <span id="S">Short Break</span>
+            <span id="L">Long Break</span>
+        </div>
+        <div class="timewrapper" id="time">
+            25:00
+        </div>
+        <div class="timebutton" id="timebutton" onclick="startInterval()">
+            Start
+        </div>
+    </div>
+    <audio src="assets/sounds/alarm.wav" id="alarm"></audio>
+    <script src="assets/js/timer.js"></script>
+</body>
+</html>
